@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-from predict_promotion import predict_promotion
-
+from promotion_predictor import predict_promotion
 st.set_page_config(page_title="Promotion Predictor", layout="centered")
 st.title("🎯 Promotion Eligibility Predictor")
 
