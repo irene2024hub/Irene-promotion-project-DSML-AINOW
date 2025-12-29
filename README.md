@@ -1,5 +1,6 @@
-A Fair and Transparent Machine Learning Model for Staff Promotion Decisions in Large Organizations
-Dataset Features and Descriptions
+# A Fair and Transparent Machine Learning Model for Staff Promotion Decisions in Large Organizations
+
+# Project Dataset Features and Descriptions
 
     EmployeeNo:
     A unique identifier automatically assigned to each employee in the system.
