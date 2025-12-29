@@ -27,5 +27,5 @@ def predict_promotion(data: pd.DataFrame, threshold: float = 0.50):
     return preds, probs
 
 
----
+
 
