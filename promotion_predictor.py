@@ -1,8 +1,18 @@
 import joblib
 import pandas as pd
 
-# Load model once
-model = joblib.load("xgb_promotion_model.pkl")
+
+import xgboost as xgb
+
+# Load the XGBoost model from JSON
+model = xgb.Booster()
+model.load_model("xgb_promotion_model.json")
+
+# Convert input DataFrame to DMatrix
+dtest = xgb.DMatrix(input_df)  # input_df is your user-uploaded data
+
+# Predict
+preds = model.predict(dtest)
 
 FEATURES = [
     "Trainings_Attended",
